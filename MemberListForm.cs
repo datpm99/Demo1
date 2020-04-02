@@ -14,6 +14,7 @@ namespace _4_Winf_DataGridView_Q1
     public partial class MemberListForm : Form
     {
         MemberDAO dao = new MemberDAO();
+        string demo = "hello world";
         public MemberListForm()
         {
             InitializeComponent();
@@ -52,6 +53,7 @@ namespace _4_Winf_DataGridView_Q1
             {
                 dao.delete(lid[i]);
             }
+            demo = "good";
             MessageBox.Show(mess);
         }
 
